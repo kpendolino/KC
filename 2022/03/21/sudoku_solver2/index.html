@@ -75,32 +75,32 @@
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=mi>4</span><span class=p>,</span><span class=mi>4</span><span class=p>,</span><span class=mi>4</span><span class=p>)</span> <span class=p>[]</span>
 </span></span><span class=line><span class=cl><span class=o>...</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=mi>6</span><span class=p>,</span><span class=mi>3</span><span class=p>,</span><span class=mi>7</span><span class=p>)</span> <span class=p>[]</span>
-</span></span></code></pre></div><p>Perhaps you&rsquo;ve already figured out what the problem is - the grid is unsolvable. You can tell because these three cells have somehow ended up with an empty candidates list - there&rsquo;s no value that is allowed for that cell. So, the first question is: is my test grid flawed, or are my solving methods? I took a bet on my solving methods, and sure enough, there was a typo in the test grid. So next step was to correct the test grid. Here it is, with a 4 in the last row in place of the 5 I&rsquo;d mistakenly entered.</p><pre tabindex=0><code class=language-pyton data-lang=pyton>test = [
-    [0,0,6,9,0,1,2,0,0],
-    [0,2,0,3,0,4,0,7,0],
-    [1,0,0,0,7,0,0,0,8],
-    [4,6,0,0,0,0,0,2,5],
-    [0,0,3,0,0,0,7,0,0],
-    [7,9,0,0,0,0,0,6,4],
-    [6,0,0,0,3,0,0,0,7],
-    [0,4,0,2,0,9,0,8,0],
-    [0,0,8,7,0,6,4,0,0]]
-</code></pre><p>With that fixed, I moved on to testing the full solve method.</p><pre tabindex=0><code>gr=Grid(test)
-gr.solve()
-</code></pre><p>And here&rsquo;s how that went:</p><pre tabindex=0><code>Score: 149
-Score: 5
-Score: 0
-Score: 0
-576|981|243
-829|364|571
-134|572|698
----+---+---
-461|897|325
-283|645|719
-795|123|864
----+---+---
-612|438|957
-347|259|186
-958|716|432
-</code></pre><p>Great success! It turns out this &ldquo;very easy&rdquo; grid was so simple it could be solved using only naked singles and hidden singles. So, up next time is finding a more difficult puzzle and adding code to check for naked pairs and hidden pairs. I hope to see you there!</p><h4><i class="fas fa-share-alt" aria-hidden=true></i>&nbsp;Share!</h4><ul class=share-buttons><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Share on Facebook"><i class="fab fa-facebook" aria-hidden=true></i><span class=sr-only>Share on Facebook</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title=Tweet><i class="fab fa-twitter" aria-hidden=true></i><span class=sr-only>Tweet</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="https://plus.google.com/share?url=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Share on Google+"><i class="fab fa-google-plus" aria-hidden=true></i><span class=sr-only>Share on Google+</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Post to Tumblr"><i class="fab fa-tumblr" aria-hidden=true></i><span class=sr-only>Post to Tumblr</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Pin it"><i class="fab fa-pinterest-p" aria-hidden=true></i><span class=sr-only>Pin it</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Submit to Reddit"><i class="fab fa-reddit-alien" aria-hidden=true></i><span class=sr-only>Submit to Reddit</span></a></li></ul><style>ul.share-buttons{list-style:none;padding:0}ul.share-buttons li{display:inline}ul.share-buttons .sr-only{position:absolute;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}</style><div class="prev-next-post pure-g"><div class=pure-u-1-24 style=text-align:left><a href=https://kpendolino.github.io/KendraCreates/2022/03/20/sudoku_solver1/><i class="fa fa-chevron-left"></i></a></div><div class=pure-u-10-24><nav class=prev><a href=https://kpendolino.github.io/KendraCreates/2022/03/20/sudoku_solver1/>Sudoku Solver - Day 1</a></nav></div><div class=pure-u-2-24>&nbsp;</div><div class=pure-u-10-24><nav class=next><a href=https://kpendolino.github.io/KendraCreates/2022/03/22/sudoku_solver3/>Sudoku Solver - Day 3</a></nav></div><div class=pure-u-1-24 style=text-align:right><a href=https://kpendolino.github.io/KendraCreates/2022/03/22/sudoku_solver3/><i class="fa fa-chevron-right"></i></a></div></div></div></div></div><script src=https://kpendolino.github.io/KendraCreates/js/ui.js></script>
+</span></span></code></pre></div><p>Perhaps you&rsquo;ve already figured out what the problem is - the grid is unsolvable. You can tell because these three cells have somehow ended up with an empty candidates list - there&rsquo;s no value that is allowed for that cell. So, the first question is: is my test grid flawed, or are my solving methods? I took a bet on my solving methods, and sure enough, there was a typo in the test grid. So next step was to correct the test grid. Here it is, with a 4 in the last row in place of the 5 I&rsquo;d mistakenly entered.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>test = [
+</span></span><span class=line><span class=cl>    [0,0,6,9,0,1,2,0,0],
+</span></span><span class=line><span class=cl>    [0,2,0,3,0,4,0,7,0],
+</span></span><span class=line><span class=cl>    [1,0,0,0,7,0,0,0,8],
+</span></span><span class=line><span class=cl>    [4,6,0,0,0,0,0,2,5],
+</span></span><span class=line><span class=cl>    [0,0,3,0,0,0,7,0,0],
+</span></span><span class=line><span class=cl>    [7,9,0,0,0,0,0,6,4],
+</span></span><span class=line><span class=cl>    [6,0,0,0,3,0,0,0,7],
+</span></span><span class=line><span class=cl>    [0,4,0,2,0,9,0,8,0],
+</span></span><span class=line><span class=cl>    [0,0,8,7,0,6,4,0,0]]
+</span></span></code></pre></div><p>With that fixed, I moved on to testing the full solve method.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>gr=Grid(test)
+</span></span><span class=line><span class=cl>gr.solve()
+</span></span></code></pre></div><p>And here&rsquo;s how that went:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Score: 149
+</span></span><span class=line><span class=cl>Score: 5
+</span></span><span class=line><span class=cl>Score: 0
+</span></span><span class=line><span class=cl>Score: 0
+</span></span><span class=line><span class=cl>576|981|243
+</span></span><span class=line><span class=cl>829|364|571
+</span></span><span class=line><span class=cl>134|572|698
+</span></span><span class=line><span class=cl>---+---+---
+</span></span><span class=line><span class=cl>461|897|325
+</span></span><span class=line><span class=cl>283|645|719
+</span></span><span class=line><span class=cl>795|123|864
+</span></span><span class=line><span class=cl>---+---+---
+</span></span><span class=line><span class=cl>612|438|957
+</span></span><span class=line><span class=cl>347|259|186
+</span></span><span class=line><span class=cl>958|716|432
+</span></span></code></pre></div><p>Great success! It turns out this &ldquo;very easy&rdquo; grid was so simple it could be solved using only naked singles and hidden singles. So, up next time is finding a more difficult puzzle and adding code to check for naked pairs and hidden pairs. I hope to see you there!</p><h4><i class="fas fa-share-alt" aria-hidden=true></i>&nbsp;Share!</h4><ul class=share-buttons><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Share on Facebook"><i class="fab fa-facebook" aria-hidden=true></i><span class=sr-only>Share on Facebook</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title=Tweet><i class="fab fa-twitter" aria-hidden=true></i><span class=sr-only>Tweet</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="https://plus.google.com/share?url=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Share on Google+"><i class="fab fa-google-plus" aria-hidden=true></i><span class=sr-only>Share on Google+</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Post to Tumblr"><i class="fab fa-tumblr" aria-hidden=true></i><span class=sr-only>Post to Tumblr</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Pin it"><i class="fab fa-pinterest-p" aria-hidden=true></i><span class=sr-only>Pin it</span></a></li>&nbsp;&nbsp;&nbsp;<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2fkpendolino.github.io%2fKendraCreates%2f2022%2f03%2f21%2fsudoku_solver2%2f" target=_blank title="Submit to Reddit"><i class="fab fa-reddit-alien" aria-hidden=true></i><span class=sr-only>Submit to Reddit</span></a></li></ul><style>ul.share-buttons{list-style:none;padding:0}ul.share-buttons li{display:inline}ul.share-buttons .sr-only{position:absolute;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}</style><div class="prev-next-post pure-g"><div class=pure-u-1-24 style=text-align:left><a href=https://kpendolino.github.io/KendraCreates/2022/03/20/sudoku_solver1/><i class="fa fa-chevron-left"></i></a></div><div class=pure-u-10-24><nav class=prev><a href=https://kpendolino.github.io/KendraCreates/2022/03/20/sudoku_solver1/>Sudoku Solver - Day 1</a></nav></div><div class=pure-u-2-24>&nbsp;</div><div class=pure-u-10-24><nav class=next><a href=https://kpendolino.github.io/KendraCreates/2022/03/22/sudoku_solver3/>Sudoku Solver - Day 3</a></nav></div><div class=pure-u-1-24 style=text-align:right><a href=https://kpendolino.github.io/KendraCreates/2022/03/22/sudoku_solver3/><i class="fa fa-chevron-right"></i></a></div></div></div></div></div><script src=https://kpendolino.github.io/KendraCreates/js/ui.js></script>
 <script src=https://kpendolino.github.io/KendraCreates/js/menus.js></script></body></html>
