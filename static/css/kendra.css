@@ -69,7 +69,7 @@ pre {
 }
 
 section#cover {
-    background-image: url('/img/Cover.png');
+    background-image: url('../img/Cover.png');
     background-size: calc(100vw - 150px);
     height: calc(.389*(100vw - 150px));
 }
