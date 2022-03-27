@@ -62,7 +62,7 @@ div.post-meta, .post-meta a {
     font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
-pre {
+pre not(.chroma) {
     background-color: #fff;
     border: 1px solid #73193E;
     padding: 5px;
@@ -74,85 +74,39 @@ section#cover {
     height: calc(.389*(100vw - 150px));
 }
 
+#main img {
+  width: 60%;
+  height: auto;
+  margin-left: 20%;
+}
+
+p.caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: -15px;
+}
+
+.menu-link {
+  background-color: #341D24b3;
+}
+.menu-link:hover {
+  background-color: #341D24;
+}
+
 /*
 
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) {
+}
 
-@media print, screen and (max-width: 960px) {
+@media (max-width: 48em) {
     section#cover {
         background-size: 100vw;
         background-repeat:no-repeat;
-        height: 42vw;
+        height: calc(.389*(100vw));
     }
-}
 
 
-
-section#menu {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border-bottom: solid 1px #B8396C;
 }
 
-#menu ul {
-    padding-left: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    font-family: Arvo, Monaco, serif;
-}
-
-#menu ul li {
-    display: inline-block;
-    padding-right: 30px;
-    before: "✿";
-    font-weight: bold;
-}
-
-#menu ul li::before {
-    content: "✿";
-    color: #B8396C;
-    padding-right:3px;
-}
-
-footer p {
-    margin-bottom: 4px;
-}
-
-li.previous, li.next, li.first, li.last, li.current {
-    display:inline-block;
-    padding-left:10px;
-    margin-left:0;
-}
-
-li.current {
-    color:  #73193E;
-}
-
-li.previous::before, li.next::after, li.first::before, li.last::after{
-    color: #B8396C;
-}
-li.first::before{
-    content: "«";
-    padding-right:5px;
-    
-}
-li.previous::before{
-    content: "‹";
-    padding-right:5px;
-    
-}
-li.next::after{
-    content: "›";
-    padding-left:5px;
-    
-}
-li.last::after{
-    content: "»";
-    padding-left:5px;
-    
-}
-ul.nav {
-    margin-left:0;
-    padding-left:0;
-    }
-*/
