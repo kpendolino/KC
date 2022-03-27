@@ -2,7 +2,6 @@
 url = "2022/03/27/swedish_weaving/"
 title = "Swedish Weaving"
 date = "2022-03-27"
-draft = true
 tags = ["swedish weaving"]
 topics = ["crafting"]
 description = ""
