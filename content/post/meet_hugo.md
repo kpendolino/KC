@@ -25,6 +25,10 @@ This photo was taken by talented photographer and dear friend [Lara Santaella](h
 
 Every color in this theme, from the background and menu bar to the text colors and syntax highlighting, is chosen directly from or inspired by the cover image. Everything in the kendra.css and syntax.css stylesheets is customized with these colors. So far, I only have a light theme, but I plan to add a dark theme and dark theme support soon(ish).
 
+## Fonts
+
+I skimmed a list of web safe fonts trying to find something that I really liked, but came up short. So I checked Google Fonts and found Raleway. Came back to the template and discovered that it was already using Raleway for headings - that's probably part of what drew me to it in the first place! Anyway I wanted to use it basically everywhere, so I set that up.
+
 ## Menus
 
 I tweaked the menus, including adding an entry for my [Curriculum Vitae](../cv/). Most of this was basic configuration, like setting up information for my social media accounts. I also customized the section after the copyright to clarify that while this page is built with Hugo and based on the [Blackburn](https://github.com/yoshiharuyamashita/blackburn) theme, it contains my own customizations and again, the lovely work of [Lara Santaella](https://prints.larasantaella.es/).

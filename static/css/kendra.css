@@ -62,6 +62,10 @@ div.post-meta, .post-meta a {
     font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
+#main pre, #main .highlight pre {
+    font-family: "Courier New", monospace;
+}
+
 pre not(.chroma) {
     background-color: #fff;
     border: 1px solid #73193E;

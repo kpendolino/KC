@@ -4,6 +4,12 @@ div.highlight {
   border: 1px solid #FC4290;
 }
 
+#main div.highlight .chroma,
+#main div.highlight pre.chroma code,
+code  {
+    font-family: "Red Hat Mono", monospace;
+}
+
 /* Background */ .chroma { 
   /*color: #f8f8f2; 
   background-color: #272822; */
