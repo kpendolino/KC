@@ -2,8 +2,8 @@
 url = "/2022/03/26/project_euler_p93/"
 title = "Project Euler - Problem 93"
 date = "2022-03-26"
-tags = ["python","coding"]
-topics = []
+tags = ["python"]
+topics = ["coding"]
 description = ""
 +++
 
@@ -32,7 +32,8 @@ So, let's take a look at some of the code I used to do this.
 
 Here we'll look at the basic functions that I set up to solve this problem.
 
-```python
+
+``` python
 op=["+","-","*","/"]
 p_op=['*','/']
 

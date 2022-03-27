@@ -3,8 +3,8 @@ url = "/2022/03/20/sudoku_solver1/"
 title = "Sudoku Solver - Day 1"
 date = "2022-03-20"
 draft = false
-tags = ["python","coding"]
-topics = ["sudoku_solver"]
+tags = ["python","sudoku_solver"]
+topics = ["coding"]
 description = ""
 +++
 

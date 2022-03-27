@@ -7,7 +7,7 @@
 
   {{ $baseUrl := .Site.BaseURL }}
 
-  {{ if isset .Params "topics" }}
+  <!--{{ if isset .Params "topics" }}
   {{ $count := len .Params.topics }}
   {{ if gt $count 0 }}
   <div>
@@ -17,7 +17,7 @@
     {{ end }}
   </div>
   {{ end }}
-  {{ end }}
+  {{ end }}-->
 
   {{ if isset .Params "tags" }}
   {{ $count := len .Params.tags }}
