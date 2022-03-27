@@ -1,0 +1,109 @@
+baseurl = "https://kpendolino.github.io/KendraCreates/"
+languageCode = "en-us"
+title = "Kendra Creates"
+theme = "blackburn"
+author = "Kendra Pendolino (She/Her)"
+copyright = "&copy; Kendra Pendolino 2022"
+canonifyurls = true
+paginate = 10
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[params]
+  # Shown in the home page
+  subtitle = "A little slice of the internet for Kendra to talk about projects that make her smile"
+  brand = "Kendra Creates"
+  #googleAnalytics = "Your Google Analytics tracking ID"
+  #disqus = "Your Disqus shortname"
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  dateFormat = "Jan 02, 2006"
+  custom_css = ["css/kendra.css"]
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  #[[menu.main]]
+  #  name = "Tags"
+  #  pre = "<i class='fa fa-tags fa-fw'></i>"
+  #  weight = 3
+  #  identifier = "tags"
+  #  url = "/tags/"
+  #[[menu.main]]
+  #  name = "Topics"
+  #  pre = "<i class='fa fa-folder fa-fw'></i>"
+  #  weight = 4
+  #  identifier = "topics"
+  #  url = "/topics/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 5
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Curriculum Vitae"
+    pre = "<i class='fas fa-award'></i>"
+    weight = 6
+    identifier = "cv"
+    url = "/cv/"
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = false
+    #style = 'monokai'
+    tabWidth = 4
+
+[social]
+  # Link your social networking accouns to the side menu
+  # by entering your username or ID.
+  twitter="kpendolino"
+  # gnusocial="*"
+  #facebook="*"
+  # weibo="*"
+  # tumblr="*"
+  #instagram="*"
+  # flickr="*"
+  # photo500px="*"
+  # pinterest="*"
+  # youtube="*"
+  # vimeo="*"
+  # vine="*"
+  # slideshare="*"
+  linkedin="kendra-pendolino-a56543a2"
+  # xing="*"
+  # reddit="*"
+  # hackernews="*"
+  github="kpendolino"
+  # gitlab="*"
+  # bitbucket="*"
+  # stackoverflow="*"
+  # serverfault="*"
+  # steam="*"
+  # mobygames="*"
+  # lastfm="*"
+  # discogs="*"
+  # keybase="*"

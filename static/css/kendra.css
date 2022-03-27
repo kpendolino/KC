@@ -1,0 +1,158 @@
+//colors: light B8396C; bold 73193E; background C2B5D1, dark 341D24
+
+html {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+body, div#main {
+    background-color: #FBFAFD;
+    color: #341D24;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+#main {
+    background-color: #FBFAFD;
+    color: #341D24;
+}
+
+div#menu {
+    background-color: #341D24;
+    color: #fff;
+}
+div#menu a {
+    color: #fff;
+}
+
+#menu .pure-menu ul {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#menu .pure-menu.social ul {
+    border-top: none;
+}
+
+div.header {
+    color: #341D24;
+    border-bottom: 1px solid #B8396C;
+}
+.header h2 {
+    color: #B8396C;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+h1, h2 {
+    color: #B8396C;
+}
+
+
+h3 {
+    color:  #73193E;
+}
+
+a, a:hover, a:focus, a:visited {
+    color:#B8396C;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+
+div.post-meta, .post-meta a {
+    color: #B8396C;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+pre {
+    background-color: #fff;
+    border: 1px solid #73193E;
+    padding: 5px;
+}
+
+section#cover {
+    background-image: url('/img/Cover.png');
+    background-size: calc(100vw - 150px);
+    height: calc(.389*(100vw - 150px));
+}
+
+/*
+
+
+@media print, screen and (max-width: 960px) {
+    section#cover {
+        background-size: 100vw;
+        background-repeat:no-repeat;
+        height: 42vw;
+    }
+}
+
+
+
+section#menu {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: solid 1px #B8396C;
+}
+
+#menu ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-family: Arvo, Monaco, serif;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding-right: 30px;
+    before: "✿";
+    font-weight: bold;
+}
+
+#menu ul li::before {
+    content: "✿";
+    color: #B8396C;
+    padding-right:3px;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+li.previous, li.next, li.first, li.last, li.current {
+    display:inline-block;
+    padding-left:10px;
+    margin-left:0;
+}
+
+li.current {
+    color:  #73193E;
+}
+
+li.previous::before, li.next::after, li.first::before, li.last::after{
+    color: #B8396C;
+}
+li.first::before{
+    content: "«";
+    padding-right:5px;
+    
+}
+li.previous::before{
+    content: "‹";
+    padding-right:5px;
+    
+}
+li.next::after{
+    content: "›";
+    padding-left:5px;
+    
+}
+li.last::after{
+    content: "»";
+    padding-left:5px;
+    
+}
+ul.nav {
+    margin-left:0;
+    padding-left:0;
+    }
+*/
