@@ -94,6 +94,9 @@ pygmentsUseClasses = true
     #style = 'monokai'
     tabWidth = 4
 
+[markup.goldmark.renderer]
+  unsafe= true
+
 [social]
   # Link your social networking accouns to the side menu
   # by entering your username or ID.

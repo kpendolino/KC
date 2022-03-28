@@ -97,6 +97,15 @@ p.caption {
   background-color: #341D24;
 }
 
+img#portrait {
+  width: 200px;
+  height: 200px;
+  object-fit:cover;
+  border-radius: 100px;
+  float: right;
+  object-position: 30% 50%;
+}
+
 /*
 
 Hides the menu at `48em`, but modify this based on your app's needs.
