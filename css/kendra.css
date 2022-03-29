@@ -1,4 +1,4 @@
-//colors: light B8396C; bold 73193E; background C2B5D1, dark 341D24
+/*colors: light B8396C; bold 73193E; background C2B5D1, dark 341D24*/
 
 html {
     font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -123,3 +123,72 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 
 }
 
+
+/*dark mode*/
+
+.dark-mode body, .dark-mode div#main {
+    color: #FBFAFD;
+    background-color: #341D24;
+}
+
+.dark-mode #main {
+    color: #FBFAFD;
+    background-color: #341D24;
+}
+
+.dark-mode div#menu {
+    background-color: #130A0D;
+    color: #fff;
+}
+
+.dark-mode .menu-link {
+  background-color: #130A0Db3;
+}
+
+.dark-mode .menu-link:hover {
+  background-color: #130A0D;
+}
+
+.dark-mode div#menu a {
+    color: #fff;
+}
+
+.dark-mode #menu .pure-menu ul {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.dark-mode div.header {
+    color: ##fff;
+    border-bottom: 1px solid #B8396C;
+}
+
+.dark-mode .header h2 {
+    color: #EEA1D2;
+    font-size: 1.1em;
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #EEA1D2;
+}
+
+
+.dark-mode a, .dark-mode a:hover, .dark-mode a:focus, .dark-mode a:visited {
+    color:#F865AA;
+}
+
+
+.dark-mode div.post-meta, .dark-mode .post-meta a {
+    color: #F865AA;
+}
+
+.dark-mode h3 {
+    color:  #B199B1;
+}
+
+
+.dark-mode pre not(.chroma) {
+    background-color: #130A0D;
+    border: 1px solid #B8396C;
+    padding: 5px;
+}
