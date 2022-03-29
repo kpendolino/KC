@@ -118,7 +118,7 @@ At this point, I had an _almost_ fully functional dark/light mode toggle incorpo
 
 ## Update Stylesheets to Include Dark Mode Styles
 
-The only thing left to do was to set up the dark mode styles. This is just standard CSS, so I won't go into details about the CSS itself. To pick the dark mode colors, I used the same basic approach I used for my custom light mode: choosing colors from my cover image using image editing software and a color-picker tool. By choosing colors from different areas of the same image, I was able to create a cohesive set of colors that work well together. This isn't so different than picking paint colors for your living room based off of an upholstery pattern or a painting that you love.
+The only thing left to do was to set up the dark mode styles. This is just standard CSS, so I won't go into details about the CSS itself. To pick the dark mode colors, I used the same basic approach I used for my custom light mode: choosing colors from my cover image using image editing software and a color-picker tool. By choosing colors from different areas of the same image, I was able to create a cohesive set of colors that work well together. This isn't so different from picking paint colors for your living room based off of an upholstery pattern or a painting that you love.
 
 If your website includes code samples with syntax highlighting, you'll want to configure your site to use style classes for syntax highlighting so that you can switch the style of your code samples using the same `.dark-mode` class as the rest of your theme. Stay tuned for a future post on customizing syntax highlighting styles.
 
