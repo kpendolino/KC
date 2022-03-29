@@ -4,7 +4,7 @@ title = "Let There Be Dark"
 date = "2022-03-28"
 tags = ["kendra creates","hugo"]
 topics = ["coding"]
-description = ""
+description = "Adding Dark Mode to Kendra Creates"
 +++
 
 Kendra Creates is based on the [Blackburn theme](https://themes.gohugo.io/themes/blackburn/) for Hugo. Blackburn is a sleek, light theme and a great starting point, but it didn't include support for dark themes out of the box. In this post, we'll look at how I added a dark theme to Kendra Creates.
