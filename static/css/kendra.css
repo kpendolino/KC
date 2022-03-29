@@ -119,10 +119,16 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         background-repeat:no-repeat;
         height: calc(.389*(100vw));
     }
-
-
 }
 
+@media (min-width: 80em) {
+    section#cover {
+        background-size: 100vw;
+        height: calc(35vh);
+        object-fit:cover;
+        background-position: center 50%;
+    }
+}
 
 /*dark mode*/
 
