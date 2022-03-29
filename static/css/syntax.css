@@ -2,6 +2,7 @@
 
 div.highlight {
   border: 1px solid #FC4290;
+  background-color: #fff;
 }
 
 #main div.highlight .chroma,
@@ -116,3 +117,51 @@ code  {
 /* GenericEmph */ .chroma .ge { font-style: italic }
 /* GenericStrong */ .chroma .gs { font-weight: bold }
 
+
+
+
+/* DARK MODE*/
+
+
+.dark-mode div.highlight {
+  border: 1px solid #B8396C;
+  background-color: #130A0D;
+}
+
+/* Background */ .dark-mode .chroma { 
+  /*color: #f8f8f2; 
+  background-color: #272822; */
+  color: #FBFAFD; 
+  background-color: #130A0D;
+}
+
+/* Literal */ .dark-mode .chroma .l,
+/* LiteralStringEscape */ .dark-mode .chroma .se,
+/* LiteralNumber */ .dark-mode .chroma .m,
+/* LiteralNumberBin */ .dark-mode .chroma .mb,
+/* LiteralNumberFloat */ .dark-mode .chroma .mf,
+/* LiteralNumberHex */ .dark-mode .chroma .mh,
+/* LiteralNumberInteger */ .dark-mode .chroma .mi,
+/* LiteralNumberIntegerLong */ .dark-mode .chroma .il,
+/* LiteralNumberOct */ .dark-mode .chroma .mo { 
+  /*color: #ae81ff;*/
+  color: #FDD4F2;
+}
+
+/* LineHighlight */ .dark-mode .chroma .hl { 
+  /*background-color: #ffffcc;*/
+  background-color: #5C474C;
+}
+
+
+/* KeywordNamespace */ .dark-mode .chroma .kn,
+/* NameTag */ .dark-mode .chroma .nt,
+/* GenericDeleted */ .dark-mode .chroma .gd { 
+  /*color: #f92672;*/
+  color: #E7A6AE;
+}
+
+/* Error */ .dark-mode .chroma .err { 
+  color: #FD4A9A; 
+  background-color: #130A0D 
+}

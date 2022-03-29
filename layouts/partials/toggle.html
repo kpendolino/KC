@@ -1,0 +1,45 @@
+<li class="pure-menu-item" id="js-toggle">
+    <a class="pure-menu-link"><i class="fas fa-moon" id="toggle-icon"></i>&nbsp; <span id="dark-mode-label">Dark Mode</span></a>
+</li>
+<script>
+var lightModeIcon = "fas fa-sun";
+var darkModeIcon = "fas fa-moon";
+
+var lightModeLabel = "Light Mode";
+var darkModeLabel = "Dark Mode";
+
+var body = document.body;
+var switcher = document.getElementById('js-toggle');
+
+//Click on dark mode icon. Add dark mode classes and wrappers. Store user preference through sessions
+switcher.addEventListener("click", function() {
+    var icon = document.getElementById('toggle-icon');
+    var label = document.getElementById('dark-mode-label');
+    this.classList.toggle('js-toggle--checked');
+    this.classList.add('js-toggle--focus');
+	//If dark mode is selected
+	if (this.classList.contains('js-toggle--checked')) {
+		body.classList.add('dark-mode');
+		//Save user preference in storage
+		localStorage.setItem('darkMode', 'true');
+		label.innerHTML = lightModeLabel;
+		icon.className = lightModeIcon;
+	} else {
+		body.classList.remove('dark-mode');
+		setTimeout(function() {
+			localStorage.removeItem('darkMode');
+		}, 100);
+		label.innerHTML = darkModeLabel;
+		icon.className = darkModeIcon;
+	}
+    })
+
+    //Check Storage. Keep user preference on page reload
+    if (localStorage.getItem('darkMode')) {
+	//body.classList.add('dark-mode');
+    switcher.classList.add('js-toggle--checked');
+    body.classList.add('dark-mode');
+    label.innerHTML = lightModeLabel;
+    icon.className = lightModeIcon;
+}
+</script>

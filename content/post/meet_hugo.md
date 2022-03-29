@@ -2,7 +2,7 @@
 url = "2022/03/27/meet_hugo/"
 title = "Meet Hugo"
 date = "2022-03-27"
-tags = ["kendra creates"]
+tags = ["kendra creates","hugo"]
 topics = ["coding"]
 description = ""
 +++
