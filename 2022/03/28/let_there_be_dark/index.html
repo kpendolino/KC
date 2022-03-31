@@ -68,26 +68,26 @@
 </span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nx>icon</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>getElementById</span><span class=p>(</span><span class=s1>&#39;toggle-icon&#39;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nx>label</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>getElementById</span><span class=p>(</span><span class=s1>&#39;dark-mode-label&#39;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=k>this</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>toggle</span><span class=p>(</span><span class=s1>&#39;js-toggle--checked&#39;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>	<span class=c1>//If dark mode is selected
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=k>if</span> <span class=p>(</span><span class=k>this</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>contains</span><span class=p>(</span><span class=s1>&#39;js-toggle--checked&#39;</span><span class=p>))</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	    <span class=nx>body</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>add</span><span class=p>(</span><span class=s1>&#39;dark-mode&#39;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>	    <span class=c1>//Save user preference in storage
-</span></span></span><span class=line><span class=cl><span class=c1></span>	    <span class=nx>localStorage</span><span class=p>.</span><span class=nx>setItem</span><span class=p>(</span><span class=s1>&#39;darkMode&#39;</span><span class=p>,</span> <span class=s1>&#39;true&#39;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>	    <span class=nx>label</span><span class=p>.</span><span class=nx>innerHTML</span> <span class=o>=</span> <span class=nx>lightModeLabel</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>	    <span class=nx>icon</span><span class=p>.</span><span class=nx>className</span> <span class=o>=</span> <span class=nx>lightModeIcon</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>	<span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	    <span class=nx>body</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>remove</span><span class=p>(</span><span class=s1>&#39;dark-mode&#39;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>	    <span class=nx>setTimeout</span><span class=p>(</span><span class=kd>function</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	        <span class=nx>localStorage</span><span class=p>.</span><span class=nx>removeItem</span><span class=p>(</span><span class=s1>&#39;darkMode&#39;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>	    <span class=p>},</span> <span class=mi>100</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>	    <span class=nx>label</span><span class=p>.</span><span class=nx>innerHTML</span> <span class=o>=</span> <span class=nx>darkModeLabel</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>	    <span class=nx>icon</span><span class=p>.</span><span class=nx>className</span> <span class=o>=</span> <span class=nx>darkModeIcon</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>	<span class=p>}</span>
-</span></span><span class=line><span class=cl>    <span class=p>})</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//If dark mode is selected
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=k>this</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>contains</span><span class=p>(</span><span class=s1>&#39;js-toggle--checked&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>body</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>add</span><span class=p>(</span><span class=s1>&#39;dark-mode&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=c1>//Save user preference in storage
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>localStorage</span><span class=p>.</span><span class=nx>setItem</span><span class=p>(</span><span class=s1>&#39;darkMode&#39;</span><span class=p>,</span> <span class=s1>&#39;true&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nx>label</span><span class=p>.</span><span class=nx>innerHTML</span> <span class=o>=</span> <span class=nx>lightModeLabel</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=nx>icon</span><span class=p>.</span><span class=nx>className</span> <span class=o>=</span> <span class=nx>lightModeIcon</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>body</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>remove</span><span class=p>(</span><span class=s1>&#39;dark-mode&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nx>setTimeout</span><span class=p>(</span><span class=kd>function</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=nx>localStorage</span><span class=p>.</span><span class=nx>removeItem</span><span class=p>(</span><span class=s1>&#39;darkMode&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>},</span> <span class=mi>100</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nx>label</span><span class=p>.</span><span class=nx>innerHTML</span> <span class=o>=</span> <span class=nx>darkModeLabel</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=nx>icon</span><span class=p>.</span><span class=nx>className</span> <span class=o>=</span> <span class=nx>darkModeIcon</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>})</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>//Check Storage. Keep user preference on page reload
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=nx>localStorage</span><span class=p>.</span><span class=nx>getItem</span><span class=p>(</span><span class=s1>&#39;darkMode&#39;</span><span class=p>))</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=c1>//body.classList.add(&#39;dark-mode&#39;);
+</span></span><span class=line><span class=cl><span class=c1>//Check Storage. Keep user preference on page reload
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>if</span> <span class=p>(</span><span class=nx>localStorage</span><span class=p>.</span><span class=nx>getItem</span><span class=p>(</span><span class=s1>&#39;darkMode&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//body.classList.add(&#39;dark-mode&#39;);
 </span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>switcher</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>add</span><span class=p>(</span><span class=s1>&#39;js-toggle--checked&#39;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=nx>body</span><span class=p>.</span><span class=nx>classList</span><span class=p>.</span><span class=nx>add</span><span class=p>(</span><span class=s1>&#39;dark-mode&#39;</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=nx>label</span><span class=p>.</span><span class=nx>innerHTML</span> <span class=o>=</span> <span class=nx>lightModeLabel</span><span class=p>;</span>
