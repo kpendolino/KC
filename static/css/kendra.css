@@ -51,6 +51,16 @@ h3 {
     color:  #73193E;
 }
 
+hr {
+    background-color: #B8396C;
+    height: 3px;
+}
+
+blockquote {
+    border-left: 3px solid #B8396C;
+    padding-left: 5px;
+}
+
 a, a:hover, a:focus, a:visited {
     color:#B8396C;
     font-family: "Raleway", Helvetica, Arial, sans-serif;

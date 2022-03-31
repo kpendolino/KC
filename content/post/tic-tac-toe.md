@@ -60,7 +60,7 @@ class Board():
   ...
 ```
 
-In the init method, I handle setting up the board. If `board` and `hash` are both omitted, it sets up a blank board in `self.e`, with a 3x3 array containing `e` in each cell. If `board` is provided, it is saved as `self.b`. I also added support for initializing a board from a `hash`. This is just a representation of a board as a string, like `"XO-,---,-OX"`. You'll see why I added this a little later.
+In the init method, I handle setting up the board. If `board` and `hash` are both omitted, it sets up a blank board in `self.e`, with a 3x3 array containing `e` in each cell. If `board` is provided, it is saved as `self.b`. I also added support for initializing a board from a `hash`. This is just a representation of a board as a string, like <span style="white-space: nowrap;">`"XO-,---,-OX"`</style>. You'll see why I added this a little later.
 
 > Note: This is code that I wrote for myself for exploration - it doesn't include the kind of validation and error checking that you'd want if you were going to make this class public. For instance, I don't check that `board` is a 3x3 array that contains only "X", "O", or "e".
 

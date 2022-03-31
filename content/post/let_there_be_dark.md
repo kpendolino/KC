@@ -93,7 +93,7 @@ Here are the changes that I made to create the toggle you see in the side menu:
 - **Line 14:** I modified this line to use `getElementById()` and the unique identifier of the element. Since this originally used `getElementsByClassName()`, I also removed the array index `[0]`; the plural `getElements` methods return arrays, while the singular `getElement` methods return individual objects.
 - **Lines 18-19:** I added these lines so that I can modify the `icon` and `label` independently.
 - **Lines 26-27:** When you toggle to dark mode, this sets the icon and label to indicate that clicking this item again will switch to light mode.
-- **Lines 33-34:** When you first load the page **or** when you toggle to light mode, this sets the icon and label to indicate that clicking this item again will swith to dark mode.
+- **Lines 33-34:** When you first load the page **or** when you toggle to light mode, this sets the icon and label to indicate that clicking this item again will switch to dark mode.
 - **Lines 43-44:** I added these lines to set the icon and label for returning readers who last viewed this page on dark mode.
 
 That's all of the code that supports the toggle itself.
@@ -112,7 +112,7 @@ The `toggle.html` partial does most of the work, however, the site doesn't yet k
   {{ partial "social.html" . }}
 {{< /highlight >}}
 
-Line 29 is doing all the work here. Pay close attention to the dot (`.`) at the end - this is essential for telling Hugo about the context of the parial; [learn more about Hugo templates and context here](https://gohugo.io/templates/introduction/).
+Line 29 is doing all the work here. Pay close attention to the dot (`.`) at the end - this is essential for telling Hugo about the context of the partial; [learn more about Hugo templates and context here](https://gohugo.io/templates/introduction/).
 
 At this point, I had an _almost_ fully functional dark/light mode toggle incorporated in my site. I say "almost" because up to this point, turning on dark mode only adds the `.dark-mode` class to the body of the page - I still need the CSS code to make the actual changes.
 
@@ -124,4 +124,4 @@ If your website includes code samples with syntax highlighting, you'll want to c
 
 ## Final Thoughts
 
-If you've been following along at home, you should now have a fully functioning toggle to switch between dark mode and light mode on your Hugo-based website. I hope this has opened you up to the world of possibility for customizing an off-the-shelf theme to achieve your desired effect.
+If you've been following along at home, you should now have a fully functioning toggle to switch between dark mode and light mode on your Hugo-based website. I hope this has opened your eyes to the world of possibility for customizing an off-the-shelf theme to achieve your desired effect.
