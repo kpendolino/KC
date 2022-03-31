@@ -59,26 +59,26 @@ switcher.addEventListener("click", function() {
     var icon = document.getElementById('toggle-icon');
     var label = document.getElementById('dark-mode-label');
     this.classList.toggle('js-toggle--checked');
-	//If dark mode is selected
-	if (this.classList.contains('js-toggle--checked')) {
-	    body.classList.add('dark-mode');
-	    //Save user preference in storage
-	    localStorage.setItem('darkMode', 'true');
-	    label.innerHTML = lightModeLabel;
-	    icon.className = lightModeIcon;
-	} else {
-	    body.classList.remove('dark-mode');
-	    setTimeout(function() {
-	        localStorage.removeItem('darkMode');
-	    }, 100);
-	    label.innerHTML = darkModeLabel;
-	    icon.className = darkModeIcon;
-	}
-    })
+    //If dark mode is selected
+    if (this.classList.contains('js-toggle--checked')) {
+        body.classList.add('dark-mode');
+        //Save user preference in storage
+        localStorage.setItem('darkMode', 'true');
+        label.innerHTML = lightModeLabel;
+        icon.className = lightModeIcon;
+    } else {
+        body.classList.remove('dark-mode');
+        setTimeout(function() {
+            localStorage.removeItem('darkMode');
+        }, 100);
+        label.innerHTML = darkModeLabel;
+        icon.className = darkModeIcon;
+    }
+})
 
-    //Check Storage. Keep user preference on page reload
-    if (localStorage.getItem('darkMode')) {
-	//body.classList.add('dark-mode');
+//Check Storage. Keep user preference on page reload
+if (localStorage.getItem('darkMode')) {
+    //body.classList.add('dark-mode');
     switcher.classList.add('js-toggle--checked');
     body.classList.add('dark-mode');
     label.innerHTML = lightModeLabel;
