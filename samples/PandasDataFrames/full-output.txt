@@ -1,0 +1,140 @@
+    Company         Country   Type  Rating  Raters
+0   Cadbury  United Kingdom  White   2.969     976
+1   Cadbury  United Kingdom   Milk   5.313    2360
+2   Cadbury  United Kingdom   Dark   4.843    1947
+3  Hersheys         America  White   3.001    1209
+4  Hersheys         America   Milk   4.554    1969
+
+    Company  Country   Type  Rating  Raters
+40   Pacari  Ecuador   Milk   4.715    1885
+41   Pacari  Ecuador   Dark   2.916    1303
+42  Kallari  Ecuador  White   4.467    1318
+43  Kallari  Ecuador   Milk   4.974    2365
+44  Kallari  Ecuador   Dark   6.096    2022
+
+0     Cadbury
+1     Cadbury
+2     Cadbury
+3    Hersheys
+4    Hersheys
+Name: Company, dtype: object
+
+40    4.715
+41    2.916
+42    4.467
+43    4.974
+44    6.096
+Name: Rating, dtype: float64
+
+    Company         Country   Type
+0   Cadbury  United Kingdom  White
+1   Cadbury  United Kingdom   Milk
+2   Cadbury  United Kingdom   Dark
+3  Hersheys         America  White
+4  Hersheys         America   Milk
+
+Index([u'Company', u'Country', u'Type', u'Rating', u'Raters'], dtype='object')
+
+(45, 5)
+
+      Company         Country  Type  Rating  Raters
+13      Lindt     Switzerland  Milk   8.673    3418
+17     Godiva         Belgium  Dark   8.273    3626
+37    Duffy's  United Kingdom  Milk   8.230    3955
+28  Toblerone     Switzerland  Milk   8.183    2675
+29  Toblerone     Switzerland  Dark   8.055    3778
+
+    Company         Country   Type  Rating
+0   Cadbury  United Kingdom  White   2.969
+1   Cadbury  United Kingdom   Milk   5.313
+2   Cadbury  United Kingdom   Dark   4.843
+3  Hersheys         America  White   3.001
+4  Hersheys         America   Milk   4.554
+
+    Company   Type  Rating  Integer Rating
+0   Cadbury  White   2.969               2
+1   Cadbury   Milk   5.313               5
+2   Cadbury   Dark   4.843               4
+3  Hersheys  White   3.001               3
+4  Hersheys   Milk   4.554               4
+
+          Country   Type  Rating  Overall Rank  Rank In Country
+0  United Kingdom  White   2.969          43.0             12.0
+1  United Kingdom   Milk   5.313          27.0              7.0
+2  United Kingdom   Dark   4.843          32.0              9.0
+3         America  White   3.001          42.0              9.0
+4         America   Milk   4.554          39.0              7.0
+
+          Country   Type  Rating  Overall Rank  Rank In Country
+0  United Kingdom  White   2.969          43.0               12
+1  United Kingdom   Milk   5.313          27.0                7
+2  United Kingdom   Dark   4.843          32.0                9
+3         America  White   3.001          42.0                9
+4         America   Milk   4.554          39.0                7
+
+                Company         Country   Type  Rating  Overall Rank
+0               Cadbury  United Kingdom  White   2.969          43.0
+1               Cadbury  United Kingdom   Milk   5.313          27.0
+2               Cadbury  United Kingdom   Dark   4.843          32.0
+3              Hersheys         America  White   3.001          42.0
+4              Hersheys         America   Milk   4.554          39.0
+5              Hersheys         America   Dark   4.192          41.0
+6           Ghirardelli         America  White   5.069          30.0
+7           Ghirardelli         America   Milk   5.749          19.0
+8           Ghirardelli         America   Dark   5.491          23.0
+9                  Dove         America  White   5.131          29.0
+10                 Dove         America   Milk   6.181          16.0
+11                 Dove         America   Dark   4.773          34.0
+12                Lindt     Switzerland  White   6.382          13.0
+13                Lindt     Switzerland   Milk   8.673           1.0
+14                Lindt     Switzerland   Dark   6.376          14.0
+15               Godiva         Belgium  White   5.455          24.0
+16               Godiva         Belgium   Milk   7.734           6.0
+17               Godiva         Belgium   Dark   8.273           2.0
+18                Milka     Switzerland  White   5.337          25.0
+19                Milka     Switzerland   Milk   6.342          15.0
+20                Milka     Switzerland   Dark   4.665          36.0
+21              Neuhaus         Belgium  White   4.617          37.0
+22              Neuhaus         Belgium   Milk   7.076           9.0
+23              Neuhaus         Belgium   Dark   5.604          21.0
+24              Cailler     Switzerland  White   5.696          20.0
+25              Cailler     Switzerland   Milk   7.183           8.0
+26              Cailler     Switzerland   Dark   6.999          10.0
+27            Toblerone     Switzerland  White   7.472           7.0
+28            Toblerone     Switzerland   Milk   8.183           4.0
+29            Toblerone     Switzerland   Dark   8.055           5.0
+30          Montezuma's  United Kingdom  White   5.282          28.0
+31          Montezuma's  United Kingdom   Milk   4.813          33.0
+32          Montezuma's  United Kingdom   Dark   5.504          22.0
+33  House of Dorchester  United Kingdom  White   5.330          26.0
+34  House of Dorchester  United Kingdom   Milk   6.886          11.0
+35  House of Dorchester  United Kingdom   Dark   4.606          38.0
+36              Duffy's  United Kingdom  White   6.449          12.0
+37              Duffy's  United Kingdom   Milk   8.230           3.0
+38              Duffy's  United Kingdom   Dark   5.758          18.0
+39               Pacari         Ecuador  White   2.688          45.0
+40               Pacari         Ecuador   Milk   4.715          35.0
+41               Pacari         Ecuador   Dark   2.916          44.0
+42              Kallari         Ecuador  White   4.467          40.0
+43              Kallari         Ecuador   Milk   4.974          31.0
+44              Kallari         Ecuador   Dark   6.096          17.0
+
+    Company         Country  Type  Rating  Overall Rank  Rank In Country
+13    Lindt     Switzerland  Milk   8.673           1.0                1
+17   Godiva         Belgium  Dark   8.273           2.0                1
+37  Duffy's  United Kingdom  Milk   8.230           3.0                1
+10     Dove         America  Milk   6.181          16.0                1
+44  Kallari         Ecuador  Dark   6.096          17.0                1
+
+     Type              Company         Country  Rank In Country
+10   Milk                 Dove         America                1
+7    Milk          Ghirardelli         America                2
+8    Dark          Ghirardelli         America                3
+9   White                 Dove         America                4
+6   White          Ghirardelli         America                5
+37   Milk              Duffy's  United Kingdom                1
+34   Milk  House of Dorchester  United Kingdom                2
+36  White              Duffy's  United Kingdom                3
+38   Dark              Duffy's  United Kingdom                4
+32   Dark          Montezuma's  United Kingdom                5
+
