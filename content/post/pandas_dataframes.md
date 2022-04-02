@@ -1,7 +1,6 @@
 +++
 title = "Pandas DataFrames"
 date = "2022-04-02"
-draft = true
 tags = ["python","pandas"]
 topics = ["coding","data science"]
 description = "Getting to Know DataFrames in Pandas"
