@@ -62,6 +62,25 @@ You can use right-click + "save link as" to download these files. You can also a
 
 We've started you off with some basic setup, including importing `pandas` and defining some useful constants.
 
+**Example**
+```python
+# SETUP
+import pandas as pd
+
+# We can use these constants to refer to columns in the DataFrame. 
+COMPANY="Company"
+COUNTRY="Country"
+RATING="Rating"
+RATERS="Raters"
+TYPE="Type"
+
+OVERALLRANK="Overall Rank"
+COUNTRYRANK="Rank In Country"
+INTRATING="Integer Rating"
+```
+
+## Create Your DataFrame
+
 To create your DataFrame, you'll use `pd.read_csv(<filename>)`. This reads a CSV file and loads it into a DataFrame using the first row as column headers. To take a quick peek at your data, you can use `DataFrame.head()` to print out the first five rows or `DataFrame.tail()` to print out the last five. Take a look at this in action:
 
 **Example**
