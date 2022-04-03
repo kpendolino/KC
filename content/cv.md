@@ -51,6 +51,11 @@ Special Projects
 
 Coursework includes computer programming for engineers and technical writing
 
+## Portfolio
+
+- Instructional Design: [Pandas DataFrames Interactive Lab](https://mybinder.org/v2/gh/kpendolino/PandasDataFrames/HEAD?labpath=PandasDataFrames.ipynb)
+- Technical Writing: [Let There Be Dark: Adding Dark Mode to Kendra Creates](../2022/03/28/let_there_be_dark/)
+
 ## Professional Development
 
 - Programming Foundations - Algorithms
