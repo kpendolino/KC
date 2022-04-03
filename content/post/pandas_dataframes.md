@@ -34,10 +34,11 @@ You can view this lab [as an interactive Jupyter notebook here](https://mybinder
 
 You can use right-click + "save link as" to download these files. You can also access them from GitHub at [kpendolino/PandasDataFrames](https://github.com/kpendolino/PandasDataFrames)
 
-- Data Set: [chocdata.csv](/samples/PandasDataFrames/chocdata.csv)
+- Exercise Data Set: [chocdata.csv](/samples/PandasDataFrames/chocdata.csv)
+- Example Data Set: [snackdata.csv](/samples/PandasDataFrames/snackdata.csv)
 - Starter Script: [start.py](/samples/PandasDataFrames/start.py)
 - Full Expected Output: [full-output.txt](/samples/PandasDataFrames/full-output.txt)
-- Finished Script (no peeking!) [finished.py](/samples/PandasDataFrames/finished.py)
+- Finished Script (no peeking!): [finished.py](/samples/PandasDataFrames/finished.py)
 
 ### Pandas Documentation
 
