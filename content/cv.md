@@ -69,6 +69,7 @@ Coursework includes computer programming for engineers and technical writing
 - Computer Science Principles Lab: Java
 - Learning Data Analytics
 - Learning Java
+- Linear Regression in Python
 
 ## Volunteering
 
