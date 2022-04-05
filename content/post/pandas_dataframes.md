@@ -19,7 +19,7 @@ When you finish this lab, you should be comfortable with:
 - Printing out the first or last five rows
 - Viewing DataFrame attributes like its columns and shape
 - Accessing individual columns
-- Manipulating the data set including sorting, ranking, grouping
+- Manipulating the data set including sorting, ranking, and grouping
 - Adding new columns and populating them with generated data
 - Changing the data type of a column
 - Filtering data by column values using `loc` and numerical or qualitative values
@@ -114,7 +114,7 @@ print(chips.tail())
 
 ## Working With Columns
 
-Pandas allows you to access column datas in several ways. First, you can use square brackets to access column data the same way you would use them to access dictionary data by key, for example, `df['Column Name']` returns the data in the _Column Name_ column. For simple column names, you can also access that data as an attribute, for example, `df.ColName` returns the data in the _ColName_ column.
+Pandas allows you to access column datas in several ways. First, you can use square brackets to access column data the same way you would use them to access dictionary data by key, for example, `df['Column Name']` returns the data in the _Column Name_ column. For simple column names, you can also access that data as an attribute, for example, `df.ColName` returns the data in the _ColName_ column. We'll see another method later.
 
 **Example**
 ```python
@@ -146,7 +146,7 @@ Name: Flavor, dtype: object
 
 ## Accessing Multiple Columns
 
-To access a subset of the DataFrame that includes multiple columns, you can use `df[[column1, column2, ...]].
+To access a subset of the DataFrame that includes multiple columns, you can use `df[[column1, column2, ...]]`.
 
 **Example**
 ```python
@@ -293,7 +293,7 @@ print(chips[[STYLE,RATING,OVERALLRANK,STYLERANK]].head())
 
 ## Filtering Columns
 
-You can view data at a specific _location_ using the `df.loc()` method. The location identifier can be a simple column label or row index, a combination for labels and indices, or even logical operators on column labels or row values.
+You can view data at a specific _location_ using the `df.loc()` method. The location identifier can be a simple column label or row index, a combination of labels and indices, or even logical operators on column labels, row indices, or cell values.
 
 **Example**
 ```python
